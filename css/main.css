@@ -9,10 +9,11 @@ body {
 }
 
 header {
+    position: fixed;
     top: 0;
     width: 100%;
     padding: 20px 0;
-    background-color: antiquewhite;
+    background-color: #564256;
 }
 
 header .navbar {
@@ -22,7 +23,7 @@ header .navbar {
 }
 
 header .navbar__title {
-    color: black;
+    color: #DDD1C7;
     font-size: 35px;
     font-weight: 600;
 }
@@ -39,12 +40,12 @@ header .navbar__menu li a {
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
-    color: black;
+    color: #DDD1C7;
     text-decoration: none;
 }
 
 header .navbar__menu li a:hover {
-    color: #006B38FF;
+    color: #A68CA6;
 }
 
 p.section__info {
@@ -52,39 +53,24 @@ p.section__info {
 }
 
 h1 {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 30px;
-    margin: 0px 0px 0.7em 0px;
+    margin: 0;
 }
 
-h2 {
-    font-weight: 400;
-    font-size: 23px;
-    margin: 0px;
-    margin: 0px 0px 0.7em 0px;
+main {
+    padding: 0 3em;
 }
 
-h3 {
-    font-weight: 300;
-    font-size: 20px;
-    margin: 0px;
-    margin: 0px 0px 0.7em 0px;
+.intro {
+    padding-top: 6.5em;
 }
 
-h4 {
-    font-weight: 300;
-    font-size: 19px;
-    margin: 0px 0px 0.7em 0px;
-}
-
-h5 {
-    font-weight: 300;
-    font-size: 18px;
-    margin: 0px 0px 0.7em 0px;
-}
-
-h6 {
-    font-weight: 300;
-    font-size: 17px;
-    margin: 0px 0px 0.7em 0px;
+section {
+    padding: 1em;
+    padding-bottom: 1.5em;
+    border: solid #DDD1C7 2px;
+    background-color: #DDD1C7;
+    margin: 3em;
+    border-radius: 0.5em;
 }
