@@ -1,0 +1,155 @@
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #564256;
+}
+
+section h1 {
+    color: #564256;
+}
+
+b {
+    font-weight: 700;
+}
+
+a {
+    color: #564256;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A68CA6;
+    transition: 0.3s;
+}
+
+s {
+    text-decoration: line-through;
+}
+
+mark {
+    background-color: #A68CA6;
+}
+
+i {
+    font-style: italic;
+}
+
+small {
+    font-size: 0.75rem;
+}
+
+.allcaps {
+    text-transform: uppercase;
+}
+
+ol, ul {
+    padding-left: 3em;
+}
+
+ol li, ul li {
+    padding: 0.4em;
+}
+
+ol li ol li, ul li ul li {
+    padding: 0;
+    padding-left: 0.4em;
+}
+
+ul {
+    list-style: circle;
+}
+
+ol li ol {
+    list-style: lower-alpha;
+}
+
+ul li ul {
+    list-style: disc;
+}
+
+button {
+    display: inline-block;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 7px;
+    transition: color 0.5s;
+    padding: 0 20px;
+    font-size: 20px;
+    margin: 0.4em;
+}
+
+.btn-buy {
+    color: #564256;
+    background-color: #A68CA6;
+}
+
+.btn-buy:hover {
+    color: #A68CA6;
+    background-color: #564256;
+}
+
+.btn-save {
+    color: #564256;
+    background-color: #DDD1C7;
+    border: 3px solid #564256;
+    font-weight: 600;
+}
+
+.btn-save:hover {
+    color: #DDD1C7;
+    background-color: #564256;
+}
+
+.btn-warning {
+    color: #DDD1C7;
+    background-color: #9B1D20;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-warning:hover {
+    color: #DDD1C7;
+    background-color: #23967F;
+}
+
+.img__box {
+    width: fit-content;
+    overflow: hidden;
+}
+
+.img__box a {
+    display: block;
+    position: relative;
+}
+
+.img__box img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-width: 21em;
+}
+
+figure .img__caption {
+    color: #DDD1C7;
+    background-color: #564256;
+    padding: 0.5em;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.img__box:hover .img__caption {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.img__box:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}

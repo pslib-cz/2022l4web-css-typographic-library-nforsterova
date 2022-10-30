@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/25bb546d7b.js" crossorigin="anonymous"></script>
     <title>Typhography Library</title>
 </head>
 <body>
@@ -16,17 +18,22 @@
             <ul class="navbar__menu">
                 <li><a href="#headings">Headings</a></li>
                 <li><a href="#text">Text</a></li>
+                <li><a href="#lists">Lists</a></li>
                 <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#pictures">Pictures</a></li>
             </ul>
+            <div class="menu-btn">
+                <i class="fa-solid fa-ellipsis-stroke fa-sm" style="--fa-animation-duration: 2s; --fa-border-color: WhiteSmoke;"></i>
+            </div>
         </nav>
     </header>
     <main>
         <section class="intro">
-            <p class="section__info">Maestro is a free typography CSS library. It was created for a school project. You don't need to make new CSS file every time you start new project. Maestro helps you style your headlines, special text markups, images, lists, basic tables, buttons, alerts and more. It's responsible and cross-browser friendly.</p>
+            <p class="section__info">Welcome to my typography CSS library. It was created for a school project. It simplifies the beginnings of other projects. You don't need to create new css for essential things like haedings or lists every time you start some project. Enjoy :)</p>
         </section>
         <section id="headings">
             <h2>Headings <code>&lt;h1&gt; - &lt;h6&gt;</code></h2>
-            <p class="section__info">Search engines use the headings to index the structure and content of your web pages. Users often skim a page by its headings. It is important to use headings to show the document structure. In the code sample below you can see how to implement heading in your code.</p>
+            <p class="section__info">The <code>&lt;h1&gt;</h1></code> to <code>&lt;h6&gt;</code> HTML elements represent six levels of section headings. <code>&lt;h1&gt;</code>> is the highest section level and <code>&lt;h6&gt;</code>> is the lowest. You use them to struture your document.</p>
             <div>
                 <h1>#1 Heading</h1>
                 <h2>#2 Heading</h2>
@@ -39,22 +46,80 @@
         <section id="text">
             <h2>Types of Text <code>&lt;p&gt; &lt;a&gt; &lt;b&gt; &lt;i&gt; &lt;s&gt; &lt;small&gt;</code></h2>
             <div>
-                <p>Normal paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Sed ac dolor sit amet purus malesuada congue.</p>
-                <p>This text is underlined and this text is bold. This text is striked and this text is highlited There is italic text with small words. This text is clickable and this text is ALLCAPS.</p>
+                <p>Paragraph without special types of text: This text is underlined and this text is bold. This text is striked and this text is highlited There is italic text with small words. This text is clickable and this text is ALLCAPS.</p>
+                <p>This text is <u>underlined</u> and this text is <b>bold</b>. This text is <s>striked</s> and this text is <mark>highlited</mark> There is <i>italic</i> text and <small>small</small> word. This text is <a href="#">clickable</a> and this text is <span class="allcaps">allcaps</span>.</p>
+            </div>
+        </section>
+        <section id="lists">
+            <h2>Lists <code>&lt;ol&gt; &lt;ul&gt; &lt;li&gt;</code></h2>
+            <div>
+                <h3>Ordered list</h3>
+                    <p class="section__info">The <code>&lt;ol&gt;</code> HTML element represents an ordered list of items This list is typically rendered as a numbered list. His items are <code>&lt;li&gt;</code>. As a example we have easy pancakes recipe here.</p>
+                    <ol>
+                        <li>
+                            Sift the dry ingredients together.
+                            <ol>
+                                <li>Flour</li>
+                                <li>Baking powder</li>
+                                <li>Sugar</li>
+                                <li>Salt</li>
+                            </ol>
+                        </li>
+                        <li>Make a well, then add the wet ingredients. Stir to combine.</li>
+                        <li>Scoop the batter onto a hot griddle or pan.</li>
+                        <li>Cook for two to three minutes, then flip.</li>
+                        <li>Continue cooking until brown on both sides.</li>
+                    </ol>
+            </div>
+                <h3>Unordered list</h3>
+                <p class="section__info">The <code>&lt;ul&gt;</code> HTML element represents an unordered list of items, it is typically a bulleted list. His items are <code>&lt;li&gt;</code>, same as in ordered lists.</p>
+                <ul>
+                    <li>
+                        Flour
+                        <ul>
+                            <li>all-purpose flour</li>
+                        </ul>
+                    </li>
+                    <li>Baking powder</li>
+                    <li>Sugar</li>
+                    <li>Salt</li>
+                    <li>Milk and butter</li>
+                    <li>Egg</li>
+                </ul>
             </div>
         </section>
         <section id="buttons">
             <h2>Buttons <code>&lt;button&gt;</code></h2>
-            <p class="section__info">The button tag defines a clickable button.</p>
+            <p class="section__info">The <code>&lt;button&gt;</code> HTML element is an interactive element activated by a user with a mouse, keyboard, finger and lots of other ways.</p>
             <div>
-                <button>Buy</button>
-                <button>Save</button>
-                <button>Warning</button>
+                <button class="btn-buy">Buy</button>
+                <button class="btn-save">Save</button>
+                <button class="btn-warning">Warning</button>
             </div>
+        </section>
+        <section id="pictures">
+            <h2>Pictures <code>&lt;img&gt;</code></h2>
+            <p class="section__info">With help of element <code>&lt;img&gt;</code> we add an image into our document.</p>
+            <figure class="img__box">
+                <a href="./img/kytka3.jpg">
+                    <img src="./img/kytka3.jpg" alt="Kytice z Kafe Kytka">
+                </a>
+                <figcaption class="img__caption">Krásná kytice z Kafe Kytka</figcaption>
+            </figure>
         </section>
     </main>
     <footer>
-        <p>Vytvořilo miniprasátko v botičkách a pršiplášti</p>
+        <div>
+            <h2>Vytvořila:</h2>
+            <p>Nikol Lenka Forsterová</p>
+            <p>nikfors019@pslib.cz</p>
+        </div>
+        <div>
+            <a href="https://pslib.cz/">
+                <img class="logo" src="./img/psliblogo.svg">
+            </a>
+
+        </div>
     </footer>
 </body>
 </html>
